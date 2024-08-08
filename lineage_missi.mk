@@ -20,9 +20,9 @@ PRODUCT_BRAND := qti
 PRODUCT_MODEL := missi system image for arm64
 PRODUCT_MANUFACTURER := qualcomm
 
-PRODUCT_GMS_CLIENTID_BASE := android-qualcomm
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="missi_phoneext4_global-user 13 TKQ1.220829.002 V14.0.5.0.TLDMIXM release-keys"
+    PRIVATE_BUILD_DESC="missi-user 13 TKQ1.221114.001 V816.0.7.0.TLDCNXM release-keys"
 
-BUILD_FINGERPRINT := qti/missi_phoneext4_global/missi:13/TKQ1.220829.002/V14.0.5.0.TLDMIXM:user/release-keys
+BUILD_FINGERPRINT := qti/missi/missi:13/TKQ1.221114.001/V816.0.7.0.TLDCNXM:user/release-keys

@@ -1,4 +1,4 @@
-# Unpinned blobs from missi_phoneext4_global-user 13 TKQ1.220829.002 V14.0.5.0.TLDMIXM release-keys
+# Unpinned blobs from missi-user 13 TKQ1.221114.001 V816.0.7.0.TLDCNXM release-keys
 
 # ACDB
 vendor/etc/acdbdata/Tutu/Tutu_Bluetooth_cal.acdb
@@ -179,6 +179,10 @@ vendor/lib64/soundfx/libswvqe.so
 vendor/lib64/soundfx/libvolumelistener.so
 
 # Audio configs
+etc/audio/video1.mp4
+etc/audio/video2.mp4
+etc/audio/video3.mp4
+etc/audio/video4.mp4
 etc/audio_effects.conf
 odm/etc/audio_policy_engine_configuration_mi.xml
 odm/etc/audio_policy_engine_default_stream_volumes_mi.xml
@@ -1550,7 +1554,9 @@ lib64/libstagefright_bufferpool@2.0.1.so
 lib64/libstagefright_codecbase.so
 lib64/libstagefright_framecapture_utils.so
 lib64/libstagefright_surface_utils.so
+system_ext/lib/vendor.qti.hardware.qconfig@1.0.so
 system_ext/lib/vendor.qti.hardware.vpp@1.1.so
+system_ext/lib64/vendor.qti.hardware.qconfig@1.0.so
 system_ext/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/bin/hw/android.hardware.media.omx@1.0-service
 vendor/bin/hw/vendor.qti.media.c2@1.0-service
@@ -1930,6 +1936,7 @@ system_ext/lib/vendor.qti.hardware.radio.qtiradio@2.3.so
 system_ext/lib/vendor.qti.hardware.radio.qtiradio@2.4.so
 system_ext/lib/vendor.qti.hardware.radio.qtiradio@2.5.so
 system_ext/lib/vendor.qti.hardware.radio.qtiradio@2.6.so
+system_ext/lib/vendor.qti.hardware.radio.qtiradio@2.7.so
 system_ext/lib/vendor.qti.hardware.radio.uim@1.0.so
 system_ext/lib/vendor.qti.hardware.radio.uim@1.1.so
 system_ext/lib/vendor.qti.hardware.radio.uim@1.2.so
@@ -1954,6 +1961,7 @@ system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so
 system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so
 system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.5.so
 system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.6.so
+system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.7.so
 system_ext/lib64/vendor.qti.hardware.radio.uim@1.0.so
 system_ext/lib64/vendor.qti.hardware.radio.uim@1.1.so
 system_ext/lib64/vendor.qti.hardware.radio.uim@1.2.so
@@ -2458,6 +2466,14 @@ vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
 vendor/lib64/vendor.qti.hardware.servicetracker@1.0.so
 vendor/lib64/vendor.qti.hardware.servicetracker@1.1.so
 vendor/lib64/vendor.qti.hardware.servicetracker@1.2.so
+
+# SLA
+vendor/bin/hw/vendor.qti.sla.service@1.0-service
+vendor/etc/init/vendor.qti.sla.service@1.0-service.rc
+vendor/lib/vendor.qti.sla.service@1.0-impl.so
+vendor/lib/vendor.qti.sla.service@1.0.so
+vendor/lib64/vendor.qti.sla.service@1.0-impl.so
+vendor/lib64/vendor.qti.sla.service@1.0.so
 
 # Soter
 vendor/app/SoterService/SoterService.apk
@@ -3186,10 +3202,12 @@ vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 odm/etc/cit_param_config.json
 vendor/app/CACertService/CACertService.apk
 vendor/app/CneApp/lib/arm64/libvndfwk_detect_jni.qti.so
+vendor/app/EidService/EidService.apk
 vendor/app/MipayService/MipayService.apk
 vendor/app/com.qualcomm.qti.gpudrivers.kona.api30/com.qualcomm.qti.gpudrivers.kona.api30.apk
 vendor/app/goodix_sz_l3a/goodix_sz_l3a.apk
 vendor/bin/hw/capabilityconfigstoretest
+vendor/bin/hw/vendor.rongcard.hardware.eid@1.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.mimd@1.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.mioob@1.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.misys@1.0-service
@@ -3284,6 +3302,7 @@ vendor/bin/sec_nvm
 vendor/bin/secure_ui_sample_client
 vendor/bin/shsusrd
 vendor/bin/sigma_dut
+vendor/bin/slad
 vendor/bin/spdaemon
 vendor/bin/spectraltool
 vendor/bin/ssr_diag
@@ -3293,6 +3312,7 @@ vendor/bin/tcpdump
 vendor/bin/test-nusensors_v2
 vendor/bin/test_diag
 vendor/bin/ucarauthd
+vendor/bin/vendor.xiaomi.hardware.otrpagent@2.0-service
 vendor/bin/vendor_cmd_tool
 vendor/bin/vib_cal
 vendor/bin/vsimd
@@ -3332,6 +3352,8 @@ vendor/etc/init/qdcmss.rc
 vendor/etc/init/qmipriod.debug.rc
 vendor/etc/init/qmipriod.rc
 vendor/etc/init/shsusrd.rc
+vendor/etc/init/slad.rc
+vendor/etc/init/vendor.rongcard.hardware.eid@1.0-service.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
 vendor/etc/init/vendor.xiaomi.hardware.midevauth@2.0-service.rc
@@ -3341,6 +3363,7 @@ vendor/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.misys@2.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.misys@3.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.misys@4.0-service.rc
+vendor/etc/init/vendor.xiaomi.hardware.otrpagent@2.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.vsimapp@1.0-service.rc
 vendor/etc/init/vendor.xiaomi.sensor.communicate@1.0-service.rc
 vendor/etc/init/vendor_flash_recovery.rc
@@ -3354,10 +3377,13 @@ vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy
 vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy
 vendor/etc/seccomp_policy/gnss@2.0-xtwifi-inet-agent.policy
 vendor/etc/seccomp_policy/qti-systemd.policy
+vendor/etc/sla/slad.conf
 vendor/etc/ssg/ta_config.json
 vendor/etc/ssg/tz_whitelist.json
 vendor/etc/vintf/manifest/manifest.xml
+vendor/etc/vintf/manifest/manifest_vendor.rongcard.hardware.eid.xml
 vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.midevauth@ucar.xml
+vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.otrpagent@2.0.xml
 vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.vsimapp.xml
 vendor/etc/vintf/manifest/mrm.xml
 vendor/etc/vintf/manifest/power.xml
@@ -3370,6 +3396,7 @@ vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@4.0.xml
 vendor/etc/vintf/manifest/vendor.xiaomi.sensor.communicate@1.0_manifest.xml
 vendor/etc/1-SN1X0_SPC.txt
 vendor/etc/RES1K.wav
+vendor/etc/UrlSign.xml
 vendor/etc/XiaoAiNiZaiNa.uim
 vendor/etc/XiaoAiTongXue.uim
 vendor/etc/audio-test-config
@@ -3463,6 +3490,7 @@ vendor/firmware/spk2_voice_delta.txt
 vendor/firmware/stm_fts_production_limits.csv
 vendor/firmware/wlanmdsp.otaupdate
 vendor/lib/hw/audio.vehicle_display.default.so
+vendor/lib/hw/vendor.rongcard.hardware.eid@1.0-impl.so
 vendor/lib/hw/vendor.xiaomi.hardware.mioob@1.0-impl.so
 vendor/lib/hw/vendor.xiaomi.hardware.misys@1.0-impl.so
 vendor/lib/hw/vendor.xiaomi.hardware.misys@2.0-impl.so
@@ -3637,6 +3665,7 @@ vendor/lib/libwapi_cert.so
 vendor/lib/libwfdhdcpservice_proprietary.so
 vendor/lib/libwms.so
 vendor/lib/libwqe.so
+vendor/lib/vendor.rongcard.hardware.eid@1.0.so
 vendor/lib/vendor.xiaomi.hardware.midevauth@2.0.so
 vendor/lib/vendor.xiaomi.hardware.mioob@1.0.so
 vendor/lib/vendor.xiaomi.hardware.misys@1.0.so
@@ -3645,6 +3674,7 @@ vendor/lib/vendor.xiaomi.hardware.misys@3.0.so
 vendor/lib/vendor.xiaomi.hardware.misys@4.0.so
 vendor/lib/vendor.xiaomi.hardware.vsimapp@1.0.so
 vendor/lib64/hw/audio.vehicle_display.default.so
+vendor/lib64/hw/vendor.rongcard.hardware.eid@1.0-impl.so
 vendor/lib64/hw/vendor.xiaomi.hardware.mioob@1.0-impl.so
 vendor/lib64/hw/vendor.xiaomi.hardware.misys@1.0-impl.so
 vendor/lib64/hw/vendor.xiaomi.hardware.misys@2.0-impl.so
@@ -3852,6 +3882,7 @@ vendor/lib64/libwapi_cert.so
 vendor/lib64/libwms.so
 vendor/lib64/libwqe.so
 vendor/lib64/libxmi_high_dynamic_range_cdsp.so
+vendor/lib64/vendor.rongcard.hardware.eid@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.midevauth@2.0.so
 vendor/lib64/vendor.xiaomi.hardware.mimd@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.mioob@1.0.so
@@ -3860,5 +3891,7 @@ vendor/lib64/vendor.xiaomi.hardware.misys@2.0.so
 vendor/lib64/vendor.xiaomi.hardware.misys@3.0.so
 vendor/lib64/vendor.xiaomi.hardware.misys@4.0.so
 vendor/lib64/vendor.xiaomi.hardware.mrm-V1-ndk_platform.so
+vendor/lib64/vendor.xiaomi.hardware.otrpagent@2.0-impl.so
+vendor/lib64/vendor.xiaomi.hardware.otrpagent@2.0.so
 vendor/lib64/vendor.xiaomi.sensor.communicate@1.0.so
 vendor/ueventd.rc
